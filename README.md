@@ -5,25 +5,21 @@ development, prototyping and testing of web and mobile applications.
 
 ```bash
 # Create a new baskt
-$ curl -X POST https://baskt.xyz
+> curl -X POST https://baskt.xyz
+d5192d9db7a64fd98681df3cdaad10cf
 
 # To load all key/value pairs from baskt
-$ curl https://baskt.xyz/baskt_key
+> curl https://baskt.xyz/baskt_key
+{"key1": "value", "key2": "value2"}
 
 # Save key/value pair
-# baskt_key: your baskt key
-# key: property key
-# value: value of key is sent as a --data parameter
-$ curl -X PUT -d 'data' https://baskt.xyz/<baskt_key>/<key>
+> curl -X PUT -d 'data' https://baskt.xyz/<baskt_key>/<key>
 
 # To retrieve a value for a given key, create a 'get' request.
-# baskt_key: your baskt key
-# key: property key to retrieve
-$ curl https://baskt.xyz/<baskt_key>/<key>
+> curl https://baskt.xyz/<baskt_key>/<key>
+value
 
 # To delete a key, create a 'delete' request.
-# baskt_key: your baskt key
-# key: property key to delete
 $ curl -X DELETE https://baskt.xyz/<baskt_key>/<key>
 ```
 
