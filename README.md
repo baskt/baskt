@@ -14,19 +14,19 @@ $ curl https://baskt.xyz/baskt_key
 # baskt_key: your baskt key
 # key: property key
 # value: value of key is sent as a --data parameter
-$ curl -X PUT -d 'data' https://baskt.xyz/&lt;baskt_key&rt;/&lt;key&rt;
+$ curl -X PUT -d 'data' https://baskt.xyz/<baskt_key>/<key>
 
 # To retrieve a value for a given key, create a 'get' request.
 # baskt_key: your baskt key
 # key: property key to retrieve
-$ curl https://baskt.xyz/&lt;baskt_key&rt;/&lt;key&rt;
+$ curl https://baskt.xyz/<baskt_key>/<key>
 
 # To delete a key, create a 'delete' request.
 # baskt_key: your baskt key
 # key: property key to delete
-$ curl -X DELETE https://baskt.xyz/&lt;baskt_key&rt;/&lt;key&rt;
+$ curl -X DELETE https://baskt.xyz/<baskt_key>/<key>
 ```
 
 ## Libraries
 
-- Python - [baskt-python] https://github.com/baskt/baskt-python
+- Python - https://github.com/baskt/baskt-python
