@@ -11,7 +11,7 @@ d5192d9db7a64fd98681df3cdaad10cf
 
 ### To load all key/value pairs from baskt
 ```bash
-> curl https://baskt.xyz/baskt_key
+> curl https://baskt.xyz/<baskt_key>
 ```
 {"key1": "value", "key2": "value2"}
 
