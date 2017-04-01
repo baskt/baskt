@@ -7,29 +7,57 @@ development, prototyping and testing of web and mobile applications.
 ```bash
 > curl -X POST https://baskt.xyz
 ```
-d5192d9db7a64fd98681df3cdaad10cf
+
+#### Response
+{
+    "baskt": "d5192d9db7a64fd98681df3cdaad10cf"
+}
 
 ### To load all key/value pairs from baskt
 ```bash
 > curl https://baskt.xyz/<baskt_key>
 ```
-{"key1": "value", "key2": "value2"}
+
+#### Response
+{
+    "baskt": "d5192d9db7a64fd98681df3cdaad10cf",
+    "data": {
+        "key": "value"
+    }
+}
 
 ### Save key/value pair
 ```bash
 > curl -X PUT -d 'data' https://baskt.xyz/<baskt_key>/<key>
 ```
 
+#### Response
+{
+    "baskt": "d5192d9db7a64fd98681df3cdaad10cf"
+    "saved": "key"
+}
+
 ### To retrieve a value for a given key, create a 'get' request.
 ```bash
 > curl https://baskt.xyz/<baskt_key>/<key>
 ```
-value
+
+#### Response
+{
+    "baskt": "d5192d9db7a64fd98681df3cdaad10cf",
+    "key": "value"
+}
 
 ### To delete a key, create a 'delete' request.
 ```bash
-$ curl -X DELETE https://baskt.xyz/<baskt_key>/<key>
+> curl -X DELETE https://baskt.xyz/<baskt_key>/<key>
 ```
+
+#### Response
+{
+    "baskt": "d5192d9db7a64fd98681df3cdaad10cf",
+    "deleted": "key"
+}
 
 ## Notice
 
