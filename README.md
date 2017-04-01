@@ -9,9 +9,11 @@ development, prototyping and testing of web and mobile applications.
 ```
 
 #### Response
+```
 {
     "baskt": "d5192d9db7a64fd98681df3cdaad10cf"
 }
+```
 
 ### To load all key/value pairs from baskt
 ```bash
@@ -19,12 +21,14 @@ development, prototyping and testing of web and mobile applications.
 ```
 
 #### Response
+```
 {
     "baskt": "d5192d9db7a64fd98681df3cdaad10cf",
     "data": {
         "key": "value"
     }
 }
+```
 
 ### Save key/value pair
 ```bash
@@ -32,10 +36,12 @@ development, prototyping and testing of web and mobile applications.
 ```
 
 #### Response
+```
 {
     "baskt": "d5192d9db7a64fd98681df3cdaad10cf"
     "saved": "key"
 }
+```
 
 ### To retrieve a value for a given key, create a 'get' request.
 ```bash
@@ -43,10 +49,12 @@ development, prototyping and testing of web and mobile applications.
 ```
 
 #### Response
+```
 {
     "baskt": "d5192d9db7a64fd98681df3cdaad10cf",
     "key": "value"
 }
+```
 
 ### To delete a key, create a 'delete' request.
 ```bash
@@ -54,10 +62,12 @@ development, prototyping and testing of web and mobile applications.
 ```
 
 #### Response
+```
 {
     "baskt": "d5192d9db7a64fd98681df3cdaad10cf",
     "deleted": "key"
 }
+```
 
 ## Notice
 
