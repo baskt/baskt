@@ -31,6 +31,10 @@ value
 $ curl -X DELETE https://baskt.xyz/<baskt_key>/<key>
 ```
 
+## Removal
+
+All baskts which are not accessed for more than 30 days will be removed.
+
 ## Libraries
 
 - Python - https://github.com/baskt/baskt-python
